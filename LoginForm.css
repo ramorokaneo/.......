@@ -1,0 +1,124 @@
+$main-color: #4dd6b6;
+
+.main-Login {
+  min-height: 100vh;
+  min-width: 100vm;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(207, 207, 207) 50%, $main-color 50%);
+
+  .Login-contain {
+    height: 75vh;
+    width: 80%;
+    background: linear-gradient(to right bottom, rgba(236, 236, 236, 0.7), rgba(236, 236, 236, 0.3));
+    border-radius: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .link {
+      text-decoration: none;
+      color: $main-color;
+      transition: translateY(-5px);
+
+      &:hover {
+        transform: translateY(-5px);
+        color: gray;
+      }
+    }
+
+    .left-side,
+    .right-side {
+      margin: 2rem;
+      box-shadow: 0.5rem 0.5rem 2rem -1tem rgb(58, 57, 57);
+      height: 0%;
+      width: 100%;
+    }
+
+    .left-side {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .img-class {
+        height: 4.5rem;
+
+        #img-id {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      input {
+        display: block;
+        border: none;
+        height: 2rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding: 0.2rem 1rem;
+        color: gray;
+        transition: all 0.1s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border: none;
+        }
+
+        &:hover {
+          outline: 0.5px solid $main-color;
+          box-shadow: 2px 2px 9px -2px $main-color;
+
+        }
+
+      }
+
+      label {
+        display: block;
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        float: left;
+        width: 70%;
+        font-size: small;
+        color: gray;
+      }
+
+      #sub_butt {
+        width: 80%;
+        background: $main-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 1tem;
+        transition: all 0.2 ease;
+
+        &:hover {
+          box-shadow: 0.5rem 0.5rem 2px -1px black;
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    .right-side {
+      .welcomeNote{
+        h3{
+          margin-left: 1rem;
+          color: black;
+          float: left;
+        }
+      }
+      .welcomeImg {
+        height: 100%;
+        width: 70%;
+
+        #wel-img-id {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
